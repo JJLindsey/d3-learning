@@ -11,6 +11,9 @@ import ChangeFunction from '../Graphics/ChangeFunction';
 const useStyles = makeStyles({
     root: {
         flexGrow: 1,
+    },
+    navTab: {
+        backgroundColor: "#7df9ff"
     }
 });
 
@@ -26,10 +29,11 @@ export default function Home() {
     <>
         <Paper className={classes.root}>
             <Tabs
+                className={classes.navTab}
                 value={selectedTab}
                 onChange={handleChange}
-                indicatorColor="secondary"
-                textColor="primary"
+                indicatorColor="primary"
+                textColor="color"
                 centered
                 aria-label="tabs navigation"
             >
