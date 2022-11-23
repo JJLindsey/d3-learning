@@ -3,6 +3,7 @@ import {makeStyles} from '@material-ui/core'
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import AppBar from '@material-ui/core';
 
 const useStyles = makeStyles({
     root: {
@@ -12,20 +13,21 @@ const useStyles = makeStyles({
 
 export default function Home() {
     const classes = useStyles();
-    const [value, setValue] = React.useState(0);
+    const [selectedTab, setSelectedTab] = React.useState(0);
 
     const handleChange = (event, newValue) => {
-        setValue(newValue);
+        setSelectedTab(newValue);
     }
 
   return (
     <Paper className={classes.root}>
         <Tabs
-            value={value}
+            value={selectedTab}
             onChange={handleChange}
             indicatorColor="secondary"
-            textColor='primary'
+            textColor="primary"
             centered
+            aria-label="tabs navigation"
         >
             <Tab label="Scatter Plot"/>
             <Tab label="Line Graph"/>

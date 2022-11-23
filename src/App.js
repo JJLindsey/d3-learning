@@ -5,7 +5,7 @@ import './App.css';
 //import ThreeCircles from './Graphics/ThreeCircles';
 //import LineGraph from './Graphics/LineGraph'
 //import ScatterPlot from './Graphics/ScatterPlot.jsx'
-import Home from './Home/index.jsx'
+import Home from './Home/Home.jsx'
 
 function App() {
   return (
