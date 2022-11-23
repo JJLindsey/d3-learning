@@ -1,17 +1,20 @@
 
 import './App.css';
-//import ChangeFunction from './ChangeFunction';
+//import ChangeFunction from './Graphics/ChangeFunction';
 //import DthreeCircle from './DthreeCircle';
 //import ThreeCircles from './Graphics/ThreeCircles';
-import Graph from './Graphics/Graph'
+//import LineGraph from './Graphics/LineGraph'
+//import ScatterPlot from './Graphics/ScatterPlot.jsx'
+import Home from './Home/index.jsx'
 
 function App() {
   return (
     <div className="App">
-      {/* <DthreeCircle/>
-      <ChangeFunction/> */}
+      {/* {/* <DthreeCircle/> */}
+      {/* <ChangeFunction/> */}
       {/* <ThreeCircles/> */}
-      <Graph/>
+      {/* <ScatterPlot/> */}
+      <Home />
     </div>
   );
 }
